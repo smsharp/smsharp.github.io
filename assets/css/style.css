@@ -73,7 +73,11 @@ p {
   line-height: 30px;
 }
 
-a:hover, a:active {
+a:hover {
+  color: #4aaaa5;
+}
+
+div.nav li.selected a {
   color: #4aaaa5;
 }
 
