@@ -4,95 +4,214 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Sara's Portfolio</title>
-	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-	<div class="header">
+  <!-- Wrap all page content here -->
+  <div id="wrap">
 
-    	<div class="container">
-    	
-    		<div class="logo">
-      			<h1>Sara Sharp</h1>
-    		</div>
+  <nav class="navbar navbar-default">
+    <div class="container">
 
-    		<div class="nav">
-     			<ul>
-  					<li><a href="index.html">About</a></li>
-  					<li class="selected"><a href="portfolio.html">Portfolio</a></li>
-  					<li><a href="contact.html">Contact</a></li>
-				</ul>
-    		</div>
-    	</div>
-	</div>
+      <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        <a class="navbar-brand" href="index.html">Sara Sharp</a>
+        </div>
 
-	<div class="content">
+    <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+          </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html">About</a></li>
+          <li class="selected"><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </div><!-- /.container -->
+  </nav>
 
-		<section id="main-section-content">
 
-			<h2>Portfolio</h2>
+  <div class="container"  style="margin-bottom: 30px;">
 
-			<div class="image-wrapper-left">
-       			<img src="./assets/images/placeholder.jpg" alt="sometext" />
-       				<a href="#" target="_blank">Project 1</a>
-       		</div>
+    <div class="row">
 
-			<div class="image-wrapper-right">
-       			<img src="./assets/images/placeholder.jpg" alt="sometext" />
-       				<a href="#" target="_blank">Project 2</a>
-       		</div>
+      <div class="col-md-8"  style="margin-bottom: 30px;">
+        <div class="box1">
 
-			<div class="image-wrapper-left">
-       			<img src="./assets/images/placeholder.jpg" alt="sometext" />
-       				<a href="#" target="_blank">Project 3</a>
-       		</div>
+          <div class="row"><!-- content title -->
+              <h1>Portfolio</h1>
+          </div>
 
-			<div class="image-wrapper-right">
-       			<img src="./assets/images/placeholder.jpg" alt="sometext" />
-       				<a href="#" target="_blank">Project 4</a>
-       		</div>
+          <div class="row"><!-- portfolio row 1 -->
+            <div class="col-md-6">
+              <div class="cuadro_intro_hover " style="background-color:#fff;">
+                <p style="text-align:center; margin-top:20px;">
+                  <img src="./assets/images/placeholder2.jpg" class="img-responsive" alt="">
+                </p>
+                <div class="caption">
+                <div class="blur"></div>
+                <div class="caption-text">
+                <h3 style="padding:12px;">Title One</h3>
+                <p>Loren ipsum dolor si amet ipsum dolor si amet ipsum dolor...</p>
+                <a class="btn btn-outline-primary" href="https://www.google.com">READ MORE <span class="glyphicon glyphicon-chevron-right"></span></a>
+              </div><!-- /.caption-text -->
+            </div><!-- /.caption -->
+          </div><!-- /.cuadro_intro_hover -->
+        
+        </div><!-- /.col-md-6 -->
 
-			<div class="image-wrapper-left">
-       			<img src="./assets/images/placeholder.jpg" alt="sometext" />
-       				<a href="#" target="_blank">Project 5</a>
-       		</div>
+        <div class="col-md-6">
+              <div class="cuadro_intro_hover " style="background-color:#fff;">
+            <p style="text-align:center; margin-top:20px;">
+              <img src="./assets/images/placeholder2.jpg" class="img-responsive" alt="">
+            </p>
+            <div class="caption">
+              <div class="blur"></div>
+              <div class="caption-text">
+                <h3 style="padding:12px;">Title Two</h3>
+                <p>Loren ipsum dolor si amet ipsum dolor si amet ipsum dolor...</p>
+                <a class="btn btn-outline-primary" href="https://www.google.com">READ MORE <span class="glyphicon glyphicon-chevron-right"></span></a>
+              </div><!-- /.caption-text -->
+            </div><!-- /.caption -->
+          </div><!-- /.cuadro_intro_hover -->
+        
+        </div><!-- /.col-md-6 -->
+        
 
-			<div class="image-wrapper-right">
-       			<img src="./assets/images/placeholder.jpg" alt="sometext" />
-       				<a href="#" target="_blank">Project 6</a>
-       		</div>
+          </div><!-- /.row 1-->
 
-		</section>
 
-		<section id="sidebar">
+          <div class="row"><!-- portfolio row 2 -->
+            <div class="col-md-6">
+              <div class="cuadro_intro_hover " style="background-color:#fff;">
+                <p style="text-align:center; margin-top:20px;">
+                  <img src="./assets/images/placeholder2.jpg" class="img-responsive" alt="">
+                </p>
+                <div class="caption">
+                <div class="blur"></div>
+                <div class="caption-text">
+                <h3 style="padding:12px;">Title Three</h3>
+                <p>Loren ipsum dolor si amet ipsum dolor si amet ipsum dolor...</p>
+                <a class="btn btn-outline-primary" href="https://www.google.com">READ MORE <span class="glyphicon glyphicon-chevron-right"></span></a>
+              </div><!-- /.caption-text -->
+            </div><!-- /.caption -->
+          </div><!-- /.cuadro_intro_hover -->
+        
+        </div><!-- /.col-md-6 -->
 
-			<h2>Connect With Me</h2>
+        <div class="col-md-6">
+              <div class="cuadro_intro_hover " style="background-color:#fff;">
+            <p style="text-align:center; margin-top:20px;">
+              <img src="./assets/images/placeholder2.jpg" class="img-responsive" alt="">
+            </p>
+            <div class="caption">
+              <div class="blur"></div>
+              <div class="caption-text">
+                <h3 style="padding:12px;">Title Four</h3>
+                <p>Loren ipsum dolor si amet ipsum dolor si amet ipsum dolor...</p>
+                <a class="btn btn-outline-primary" href="https://www.google.com">READ MORE <span class="glyphicon glyphicon-chevron-right"></span></a>
+              </div><!-- /.caption-text -->
+            </div><!-- /.caption -->
+          </div><!-- /.cuadro_intro_hover -->
+        
+        </div><!-- /.col-md-6 -->
+        
+          </div><!-- /.row 2-->
 
-			<a href="https://github.com/" target="_blank">
-				<img id="connect-1" alt="github" src="./assets/images/github.png">
-			</a>
+          <div class="row"><!-- portfolio row 3 -->
+            <div class="col-md-6">
+              <div class="cuadro_intro_hover " style="background-color:#fff;">
+                <p style="text-align:center; margin-top:20px;">
+                  <img src="./assets/images/placeholder2.jpg" class="img-responsive" alt="">
+                </p>
+                <div class="caption">
+                <div class="blur"></div>
+                <div class="caption-text">
+                <h3 style="padding:12px;">Title Five</h3>
+                <p>Loren ipsum dolor si amet ipsum dolor si amet ipsum dolor...</p>
+                <a class="btn btn-outline-primary" href="https://www.google.com">READ MORE <span class="glyphicon glyphicon-chevron-right"></span></a>
+              </div><!-- /.caption-text -->
+            </div><!-- /.caption -->
+          </div><!-- /.cuadro_intro_hover -->
+        
+        </div><!-- /.col-md-6 -->
 
-			<a href="https://www.linkedin.com/" target="_blank">
-				<img id="connect-2" alt="linkedin" src="./assets/images/linkedin.png">
-			</a>
+        <div class="col-md-6">
+              <div class="cuadro_intro_hover " style="background-color:#fff;">
+            <p style="text-align:center; margin-top:20px;">
+              <img src="./assets/images/placeholder2.jpg" class="img-responsive" alt="">
+            </p>
+            <div class="caption">
+              <div class="blur"></div>
+              <div class="caption-text">
+                <h3 style="padding:12px;">Title Six</h3>
+                <p>Loren ipsum dolor si amet ipsum dolor si amet ipsum dolor...</p>
+                <a class="btn btn-outline-primary" href="https://www.google.com">READ MORE <span class="glyphicon glyphicon-chevron-right"></span></a>
+              </div><!-- /.caption-text -->
+            </div><!-- /.caption -->
+          </div><!-- /.cuadro_intro_hover -->
+        
+        </div><!-- /.col-md-6 -->
+        
 
-			<a href="https://stackoverflow.com/" target="_blank">
-				<img id="connect-3" alt="stack" src="./assets/images/stack.png">
-			</a>
-		
-		</section>
+          </div><!-- /.row 3-->
+        </div><!-- /.box 1 -->
+      </div><!-- /col-md-8 -->
 
-	</div>
+      <div class="col-md-4">
+        <div class="box1">
 
-	<div class="footer">
+        
+        <div class="row">
 
-		<div class="inner-footer">
-			<p>&copy; Copyright 2017 Sara Sharp</p>
-		</div>
-	</div>
+          <h3>Connect With Me</h3>
 
+        </div>
+
+        <div class="row"><!-- insert icons here -->
+
+          <a href="https://github.com/" target="_blank">
+            <img id="connect-1" alt="github" src="./assets/images/github.png">
+          </a>
+
+          <a href="https://www.linkedin.com/" target="_blank">
+            <img id="connect-2" alt="linkedin" src="./assets/images/linkedin.png">
+          </a>
+
+          <a href="https://stackoverflow.com/" target="_blank">
+            <img id="connect-3" alt="stack" src="./assets/images/stack.png">
+          </a>
+
+        </div>
+        </div><!-- /.box 1 -->
+      </div><!-- /col-md-4 -->
+
+    </div><!-- /.row 1 -->
+
+  </div><!-- /.container -->
+
+  </div><!-- Wrap Div end -->
+
+  <div id="footer">
+      <div class="container">
+        <p class="text-muted credit">© Copyright 2017 Sara Sharp</p>
+      </div>
+  </div>
 
 </body>
-
 </html>
