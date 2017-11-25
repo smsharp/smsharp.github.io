@@ -2,12 +2,23 @@
 <html lang="en-us">
 
 <head>
-	<meta charset="UTF-8">
-	<title>Sara's Portfolio</title>
+  <meta charset="UTF-8">
+  <title>Sara's Portfolio</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+  
   <link rel="stylesheet" href="style.css">
+
+  <!--font links-->
+  <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+  <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" type="text/css"/>
+
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 
 </head>
 
@@ -17,10 +28,9 @@
   <div id="wrap">
 
   <nav class="navbar navbar-default">
-    <div class="container">
 
       <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
+        <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
@@ -28,37 +38,35 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-        <a class="navbar-brand" href="index.html">Sara Sharp</a>
+
+          <div>
+            <h2>
+            <a href="" title="name">&lt;/S</a>HARP&gt;<span>|</span></h2> 
+          </div>
         </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="selected"><a href="index.html">About</a></li>
+            <li><a href="portfolio2.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="index.html">About</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li class="selected"><a href="contact.html">Contact</a></li>
-        </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
-    </div><!-- /.container -->
   </nav>
 
 
-  <div class="container"  style="margin-bottom: 30px;">
+
+  <div class="container"">
 
     <div class="row">
+      <div class="row"><!-- content title -->
+        <h1>Contact</h1>
+      </div>
 
-      <div class="col-md-8"  style="margin-bottom: 30px;">
+      <div class="col-md-8"">
         <div class="box1">
-
-        
-        <div class="row"><!-- content title -->
-
-          <h1>Contact</h1>
-
-        </div>
 
         <div class="row"><!-- contact form -->
 
@@ -84,7 +92,7 @@
 
               <div class="form-group">
                 <textarea class="form-control" type="textarea" id="message" placeholder="Message" maxlength="140" rows="7"></textarea>
-                  <span class="help-block"><p id="characterLeft" class="help-block ">You have reached the limit</p></span>                    
+                  <span class="help-block"></span>                    
               </div>
             
               <button type="button" id="submit" name="submit" class="btn btn-primary pull-left">Submit</button>
@@ -97,33 +105,8 @@
       </div><!-- /col-md-8 -->
 
       <div class="col-md-4">
-        <div class="box1">
-
         
-        <div class="row">
-
-          <h3>Connect With Me</h3>
-
-        </div>
-
-        <div class="row"><!-- insert icons here -->
-
-          <a href="https://github.com/" target="_blank">
-            <img id="connect-1" alt="github" src="./assets/images/github.png">
-          </a>
-
-          <a href="https://www.linkedin.com/" target="_blank">
-            <img id="connect-2" alt="linkedin" src="./assets/images/linkedin.png">
-          </a>
-
-          <a href="https://stackoverflow.com/" target="_blank">
-            <img id="connect-3" alt="stack" src="./assets/images/stack.png">
-          </a>
-
-        </div>
-        </div><!-- /.box 1 -->
-      </div><!-- /col-md-4 -->
-
+      </div>
     </div><!-- /.row 1 -->
 
   </div><!-- /.container -->
@@ -132,7 +115,23 @@
 
   <div id="footer">
       <div class="container">
-        <p class="text-muted credit">© Copyright 2017 Sara Sharp</p>
+        <div class="row" id="copyright-div">
+          <p class="text-muted credit">© Copyright 2017 Sara Sharp</p>
+        </div>
+        <div class="row" id="connect-div"><!-- insert icons here -->
+          <a href="https://github.com/" target="_blank">
+            <img id="connect-1" alt="github" width="42" src="./assets/images/github.png">
+          </a>
+
+          <a href="https://www.linkedin.com/" target="_blank">
+            <img id="connect-2" alt="linkedin" width="42" src="./assets/images/linkedin.png">
+          </a>
+
+          <a href="https://stackoverflow.com/" target="_blank">
+            <img id="connect-3" alt="stack" width="42" src="./assets/images/stack.png">
+          </a>
+
+        </div>
       </div>
   </div>
 

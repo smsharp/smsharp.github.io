@@ -5,9 +5,20 @@
 	<meta charset="UTF-8">
 	<title>Sara's Portfolio</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+  
   <link rel="stylesheet" href="style.css">
+
+  <!--font links-->
+  <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+  <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" type="text/css"/>
+
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 
 </head>
 
@@ -17,10 +28,9 @@
   <div id="wrap">
 
   <nav class="navbar navbar-default">
-    <div class="container">
 
       <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
+        <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
@@ -28,80 +38,41 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-        <a class="navbar-brand" href="index.html">Sara Sharp</a>
+
+          <div>
+            <h2>
+            <a href="" title="name">&lt;/S</a>HARP&gt;<span>|</span></h2> 
+          </div>
         </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="selected"><a href="index.html">About</a></li>
+            <li><a href="portfolio2.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li class="selected"><a href="index.html">About</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
-    </div><!-- /.container -->
   </nav>
 
 
-  <div class="container"  style="margin-bottom: 30px;">
+  <div class="container">
 
-    <div class="row">
-
-      <div class="col-md-8"  style="margin-bottom: 30px;">
-        <div class="box1">
-
+    <div class="row" id="about-content">
         
-        <div class="row"><!-- content title -->
+        <img src="./assets/images/profile3.png" alt="profile pic" class="pull-left gap-right">
 
-          <h1>About</h1>
+        <div class="row" id="about-content"><!-- about content -->
+            <h1>About Sara</h1>
+            
 
+            <p>Sara Sharp is a full stack web application and software developer with a passion for integrating code and art to make the best user experience possible.</p> 
+            <p>A Wildlife Science graduate from Virginia Tech and a love for the outdoors, Sara found herself home bound after a back injury her senior year of college. With determination not to let her injury keep her down, she began teaching herself design programs so she could make t-shirts and flyers for student organizations. If she couldn't join them, she was still going to make a difference.</p>
+            <p>Since then, she has continued her graphics journey, and in 2017, attended Case Western Reverse University's Coding Bootcamp to expand her skill set. She thrives in software and application development, excited to learn new languages and constantly looking for ways to write better code. With an eye for detail, she enjoys taking the user experience to new levels.</p>
+            <p>As a freelance graphic designer for many years, she works well to communicate and understand the needs of others. She likes tackling complex problems and looking for ways to improve her skills. She looks very forward to finding a career in a fun, fast-paced environment, where she can use and refine her coding skills and mix in her creative eye. </p>
         </div>
-
-        <div class="row"><!-- about content -->
-
-            <img src="./assets/images/ace.gif" alt="ace" class="pull-left gap-right">
-
-            <p>That's how I feel when I successfully get something to work on Sublime.</p>
-            <p>I was born in Virginia and lived there until I was 33. I graduated in 2008 from Virginia Tech with a BS in Wildlife Science. My final year of college I injured my back, which made a future of frollicing in the woods pretty difficult, so I started teaching myself graphic design. I've been designing logos, t-shirts, flyers, and the like since. After dabbling a little in web design, I decided to expand my skillset and attend CWRU's Coding Bootcamp.</p> 
-            <p>Here I am. Excited and nervous. But each day I understand coding a little bit better, and that makes me more confident....And that's a good feeling.</p> 
-
-
-        </div>
-        </div><!-- /.box 1 -->
-      </div><!-- /col-md-8 -->
-
-      <div class="col-md-4">
-        <div class="box1">
-
-        
-        <div class="row">
-
-          <h3>Connect With Me</h3>
-
-        </div>
-
-        <div class="row"><!-- insert icons here -->
-
-          <a href="https://github.com/" target="_blank">
-            <img id="connect-1" alt="github" src="./assets/images/github.png">
-          </a>
-
-          <a href="https://www.linkedin.com/" target="_blank">
-            <img id="connect-2" alt="linkedin" src="./assets/images/linkedin.png">
-          </a>
-
-          <a href="https://stackoverflow.com/" target="_blank">
-            <img id="connect-3" alt="stack" src="./assets/images/stack.png">
-          </a>
-
-        </div>
-        </div><!-- /.box 1 -->
-      </div><!-- /col-md-4 -->
-
-    </div><!-- /.row 1 -->
+    </div>
 
   </div><!-- /.container -->
 
@@ -109,9 +80,27 @@
 
   <div id="footer">
       <div class="container">
-        <p class="text-muted credit">© Copyright 2017 Sara Sharp</p>
+        <div class="row" id="copyright-div">
+          <p class="text-muted credit">© Copyright 2017 Sara Sharp</p>
+        </div>
+        <div class="row" id="connect-div"><!-- insert icons here -->
+          <a href="https://github.com/" target="_blank">
+            <img id="connect-1" alt="github" width="42" src="./assets/images/github.png">
+          </a>
+
+          <a href="https://www.linkedin.com/" target="_blank">
+            <img id="connect-2" alt="linkedin" width="42" src="./assets/images/linkedin.png">
+          </a>
+
+          <a href="https://stackoverflow.com/" target="_blank">
+            <img id="connect-3" alt="stack" width="42" src="./assets/images/stack.png">
+          </a>
+
+        </div>
       </div>
   </div>
+
+  <script src="assets/javascript/app.js"></script>
 
 </body>
 </html>
